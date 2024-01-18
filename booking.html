@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Fuel - Fuel Booking</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fuel Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="initial.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="booking-form">
+        <h2>Book Fuel</h2>
+        <form id="fuelBookingForm" action="process_booking.php" method="post">
+            <div class="form-group">
+                <label for="fuel_type">Fuel Type:</label>
+                <select id="fuel_type" name="fuel_type" required>
+                    <option value="petrol">Petrol</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="natural_gas">Natural Gas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity (liters):</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery_address">Delivery Address:</label>
+                <textarea id="delivery_address" name="delivery_address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" id="calculatePrice">Calculate Price</button>
+            </div>
+            <div class="form-group">
+                <label for="price">Total Price:</label>
+                <input type="text" id="price" name="price" readonly>
+            </div>
+            <div class="form-group">
+                <button type="submit">Book Now</button>
+            </div>
+        </form>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer>
+        
+   
+        <p>&copy; 2023 Fuel Booking. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Include your JavaScript file for interactivity -->
+    <style>
+        /* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font family for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("main.png")
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6600; /* Change color on hover */
+}
+
+/* Style the booking form */
+.booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #464343;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff5500; /* Header text color */
+}
+
+/* Style form groups (labels and form controls) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Add some space below the label */
+    color: #e64b4b; /* Label text color */
+}
+
+.form-group select,
+.form-group input[type="number"],
+.form-group textarea {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+/* Style the submit button */
+.form-group button {
+    background-color: #e65116;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for better visibility */
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #b35f00; /* Change color on hover */
+}
+
+/* Add background image to the booking form container */
+.booking-form {
+    background-image: url('booking-background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style the submit button on hover */
+.form-group button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header ul {
+        text-align: center;
+    }
+
+    header ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .booking-form {
+        max-width: 90%;
+    }
+}
+
+    </style>
+</body>
+</html>

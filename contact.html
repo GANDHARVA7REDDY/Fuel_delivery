@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fuel Booking</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You'd need to create a CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fuel Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="initial.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <style>
+          .formgroup input {
+    width: 5-0%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px; /* Increase font size for better readability */
+}
+
+        </style>
+    </header>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p> <b> If you have any queries or feedback, please don't hesitate to contact us using the form below.</b>
+            </p>
+            <br>
+          <p><h5> <sup>*</sup> 24/7 service is provided</h5></p>
+        
+        
+        <form action="contact_process.php" method="POST">
+            <div class="formgroup">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            </div>
+            <div class="formgroup">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+
+        <div class="formgroup">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        </div>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Fuel Booking. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Booking Login</title>
+    <style>
+        /* Reset some default styles for consistency */
+body, h2, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font family for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("pexels-screeny-11053641.jpg");
+    background-size: 1550px,1020px;
+}
+
+/* Style the login container */
+.login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #312f2f;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the form group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Add some space below the label */
+}
+
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px; /* Increase font size for better readability */
+}
+
+/* Style the login button */
+.form-group button {
+    background-color: #e65116;
+    color: #0e0e0e;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for better visibility */
+}
+
+/* Style the "home" link */
+.login-container a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the link */
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.login-container a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+label[for="password"] {
+    color: #e65116; 
+}
+label[for="username"] {
+    color: #e65116;
+}
+h2{
+    color:#e65116;
+}
+
+
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="login-container">
+        <h2>Login to Fuel Booking</h2>
+        <a href="initial.html">home</a>
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+  
+</body>
+</html>
